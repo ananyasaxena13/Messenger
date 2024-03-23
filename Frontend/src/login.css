@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .navLogin{
+    width: 100vw;
+    height: 8vh;
+    background-color: #13212C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navLogin > img {
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+    border: 2px solid transparent;
+  }
+  .navLogin > h1 {
+    color: #abbff5;
+    margin-left: 10px;
+  }
+  
+    .subMainLogin{
+      height: 92vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: url("./assests/B4.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .login-auth-form-container{
+        height: 55vh;
+        width: 22vw;
+        padding: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.250); /* White background with reduced opacity */
+        backdrop-filter: blur(3px);
+    }
+    .salutation{
+      width: 100%;
+      height: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .salutation > em{
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #abbff5;
+    }
+    .login-form{
+      width: 100%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .loginInput{
+      width: 100%;
+      height: 62%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-around;
+    }
+    .loginInput > input {
+      height: 20%;
+      width: 94%;
+      border-radius: 20px;
+      padding-left: 15px;
+      border: none;
+    
+    }
+    .loginInput > input::placeholder{
+      font-weight: bold;
+    }
+    .loginInput > em {
+      margin-left: 5px;
+      font-weight: bold;
+      color: #abbff5;
+    }
+    .login-form > button{
+      height: 15%;
+      width: 98%;
+      border-radius: 35px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #abbff5;
+      color: #202342;
+      border: none;
+      cursor: pointer;
+    }
