@@ -1,94 +1,93 @@
 .navRegister{
-    width: 100vw;
-    height: 8vh;
-    background-color: #13212C;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  width: 100vw;
+  height: 8vh;
+  background-color: #13212C;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .navRegister > img {
-  height: 40px;
-  width: 40px;
-  margin-left: 15px;
-  border: 2px solid transparent;
+height: 40px;
+width: 40px;
+margin-left: 15px;
+border: 2px solid transparent;
 }
 .navRegister > h1 {
-  color: #abbff5;
-  margin-left: 10px;
+color: #abbff5;
+margin-left: 10px;
 }
-  .subMain{
-    height: 92vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url("./assests/B4.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.subMain{
+  height: 92vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("./assests/B1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .register-auth-form-container{
-    height: 65vh;
-    width: 22vw;
-    padding: 1vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.250); /* White background with reduced opacity */
-    backdrop-filter: blur(3px);
-  }
-  .register-form{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .registerInput{
-    height: 85%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  .registerInput > input {
-    width: 95%;
-    height: 20%;
-    border: none;
-    border-radius: 35px;
-    margin-bottom: 15px;
-    padding-left: 15px;
-  }
-  .registerInput > input::placeholder{
-    font-weight: bold;
-  }
-  .registerInput > em {
-    font-weight: bold;
-    color: #abbff5;
-    margin-bottom: 10px;
-  }
-  .register-form > button{
-    height: 10%;
-    width: 100%;
-    border-radius: 35px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #abbff5;
-    color: #202342;
-    border: none;
-    margin-bottom: 5px;
-    cursor: pointer;
-  }
-  .register-auth-form-container > span,.login-auth-form-container > span {
-    color: #abbff5;
-  }
-  .register-auth-form-container > span > a,.login-auth-form-container > span > a{
-    text-decoration:  none;
-    font-weight: bolder;
-  }
-  
+  height: 65vh;
+  width: 22vw;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.250); /* White background with reduced opacity */
+  backdrop-filter: blur(3px);
+}
+.register-form{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.registerInput{
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.registerInput > input {
+  width: 95%;
+  height: 20%;
+  border: none;
+  border-radius: 35px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+.registerInput > input::placeholder{
+  font-weight: bold;
+}
+.registerInput > em {
+  font-weight: bold;
+  color: #abbff5;
+  margin-bottom: 10px;
+}
+.register-form > button{
+  height: 10%;
+  width: 100%;
+  border-radius: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #abbff5;
+  color: #202342;
+  border: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.register-auth-form-container > span,.login-auth-form-container > span {
+  color: #abbff5;
+}
+.register-auth-form-container > span > a,.login-auth-form-container > span > a{
+  text-decoration:  none;
+  font-weight: bolder;
+}
