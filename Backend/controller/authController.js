@@ -40,8 +40,6 @@ export const signupUser = async (res,req) => {
         }
     }
     catch (e) {
-        console.log(req.body.password);
-        console.log(typeof(req.body.password));
         console.log(e);
     }
 }

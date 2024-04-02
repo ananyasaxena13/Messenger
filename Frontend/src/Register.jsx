@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import './register.css';
+import logo from "./assests/logo.png";
 
 export const Register = (props) => {
     const [email, setEmail] = useState('');
