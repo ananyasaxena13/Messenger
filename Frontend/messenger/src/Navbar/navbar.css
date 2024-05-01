@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+.navMain{
+    height: 8vh;
+    width: 100vw;
+    background-color: rgb(224, 191, 190);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 5px 5px 5px  rgb(200, 164, 163);
+}
+.navLogo{
+    height: 90%;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.navLogo > img{
+    height: 90%;
+    width: 23%;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 5px 5px 5px  rgb(200, 164, 163);
+}
+.navLogo > h2{
+    font-family: "Playpen Sans";
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(8, 23, 42);
+}

@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+.loginMain {
+  height: 70%;
+  width: 55%;
+  background-color: rgb(224, 191, 190);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 15px 15px 25px rgb(200, 164, 163);
+}
+.loginMain > img {
+  height: 100%;
+  width: 55%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 45%;
+  height: 100%;
+  background-color: rgb(220, 185, 185);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.greet {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.greet > h1 {
+  font-family: "Satisfy";
+  font-weight: 650;
+  font-size: 23px;
+  color: rgb(8, 23, 42);
+}
+.greet > h3 {
+  font-family: "Satisfy";
+  font-weight: 650;
+  font-size: 20px;
+  color: rgb(8, 23, 42);
+}
+.username {
+  width: 100%;
+  height: 11%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+.username > div {
+  height: 98%;
+  width: 17%;
+  background-color: rgb(244, 166, 155);
+  border-radius: 50%;
+  border: 3px solid rgb(8, 23, 42);
+  transform: translateX(20px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.username > div > img {
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  background-color: white;
+}
+.username > input {
+  width: 99%;
+  height: 88%;
+  border-top-right-radius: 27px;
+  border-bottom-right-radius: 27px;
+  border: none;
+  font-size: medium;
+  font-family: "Kalam";
+  font-weight: 600;
+  padding-left: 25px;
+  color: rgb(8, 23, 42);
+}
+.username > input::placeholder {
+  font-weight: 600;
+  font-size: medium;
+  font-family: "Kalam";
+
+}
+.password {
+  width: 100%;
+  height: 11%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+.password > div {
+  height: 98%;
+  width: 17%;
+  background-color: rgb(244, 166, 155);
+  border-radius: 50%;
+  border: 3px solid rgb(8, 23, 42);
+  transform: translateX(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.password > div > img {
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  border-radius: 50%;
+}
+.password > input {
+  width: 99%;
+  height: 88%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top-left-radius: 27px;
+  border-bottom-left-radius: 27px;
+  border: none;
+  font-size: medium;
+  font-family: "Kalam";
+  font-weight: 600;
+}
+.password > input::placeholder {
+  font-weight: 600;
+  font-size: medium;
+  font-family: "Kalam";
+}
+.forgetPass {
+  width: 85%;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.forgetPass > a {
+  font-family: "Kalam";
+  font-size: medium;
+  font-weight: 600;
+  color: rgb(8, 23, 42);
+  text-decoration: none;
+}
+.forgetPass > a:hover {
+  color: rgb(17, 59, 114);
+}
+button {
+  width: 85%;
+  height: 8%;
+  background-color: rgb(15, 16, 45);
+  color: rgb(237, 156, 66);
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  font-family: "Sofia";
+  font-weight: 700;
+  cursor: pointer;
+}
+span {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: rgb(15, 16, 45);
+  font-family: "Pacifico";
+  font-weight: 500;
+  font-size: 17px;
+}
+.aTag {
+  color: rgb(15, 16, 45);
+  font-family: "Pacifico";
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.aTag:hover {
+  color: rgb(17, 59, 114);
+  cursor: pointer;
+}

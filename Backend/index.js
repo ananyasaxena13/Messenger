@@ -1,24 +1,26 @@
 import express from 'express';
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import connectDB from "./mongoDB/connectDb.js"
-import {router} from "./Routes/authRoutes.js";
+import connectDb from './mongodb/connectDb.js';
+import {authRouter} from './routes/authRoutes.js';
+import {messageRouter} from './routes/messageRoutes.js';
+import { getDataRouter } from './routes/getDataRoutes.js';
+
 
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:3001"],
+    origin: ["http://localhost:3000"],
     credentials:true,
     optionSuccessStatus:200
 }))
 app.use(cookieParser());
-app.use("/",router);
 
-connectDB("mongodb://localhost:27017/Messenger");
+app.use("/",authRouter);
+app.use("/messages",messageRouter);
+app.use("/",getDataRouter);
+connectDb();
 
-
-
-
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+app.listen(4000, () => {
+    console.log('Server is running on port 4000');
 })
