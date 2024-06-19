@@ -2,7 +2,7 @@ import React, {useState } from "react";
 import "./login.css";
 import FormImg from "../assests/FormImg.png";
 import { Navbar } from "../Navbar/navbar";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import profile_logo from "../assests/profile_logo.jpg";
 import lock from "../assests/lock.png";
 import {Login} from "../hooks/login.js";
@@ -10,20 +10,18 @@ import {Login} from "../hooks/login.js";
 
 export const LoginScreen = () => {
 
-    const navigate = useNavigate();
-
+  const Navigate = useNavigate();
     const [username, setUsername] = useState("");
     const [password, setPass] = useState("");
 
     const handleSubmit = async(e) => {
       e.preventDefault();
       const res = await Login(username,password);
-      navigate("/");
       if(res){
         setUsername("");
         setPass("");
       }
-
+      window.location.reload();
     }
   return (
     <div className="Main">
@@ -46,7 +44,6 @@ export const LoginScreen = () => {
                 <input  onChange={(e) => setPass(e.target.value)}   type="password" placeholder="Password" value={password}/>
                 <div><img src={lock} alt="" /></div>
             </div>
-            <div className="forgetPass"><a href="/">Forget Password?</a></div>
             <button type="submit">login</button>
             <span>Don't have an account? <Link to="/register" className="aTag">Register</Link></span>
           </form>

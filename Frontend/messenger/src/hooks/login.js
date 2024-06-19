@@ -5,6 +5,7 @@ export const Login = async(username,password) =>{
     const success = handleInputErrors(username,password);
     if(!success)    return;
     try{
+        console.log(username)
         const res = await fetch("http://localhost:4000/login",{
             method: "POST",
             headers: {"Content-Type":"application/json"},
@@ -13,8 +14,7 @@ export const Login = async(username,password) =>{
         const data = await res.json();
         toast.success(`${data.message}`);
 
-        if(data.message === "User Logged In Successfully")   {localStorage.setItem("User",username);
-    }
+        if(data.message === "User Logged In Successfully")   {localStorage.setItem("User",username)}
         return data.message;
     }
     catch(e){

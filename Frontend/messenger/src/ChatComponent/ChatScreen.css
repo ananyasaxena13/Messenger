@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+.ChatScreenMain{
+    height: 100%;
+    width: 65%;
+    background-color: rgb(209, 174, 173);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ChatScreenHeader{
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(209, 174, 173);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ChatScreenChat{
+    width: 100%;
+    height: 84vh;
+    background-color: rgb(218, 184, 183);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.ChatScreenChat>h1{
+    font-family: "Inter";
+    font-size: medium;
+    margin-bottom: 30px;
+}
+.ChatScreenFooter{
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(209, 174, 173);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#chatInput{
+    width: 85%;
+    height: 75%;
+    background-color: rgb(180, 151, 150);
+    border-radius: 15px;
+    padding-left: 15px;
+    border: none;
+    color: #0f102c;
+    font-weight: 600;
+    font-family: "Inter";
+}
+#chatInput::placeholder{
+    color: #0f102c58;
+}
+#chatInput:focus{
+    outline: none;
+}
+#addImgBtn{
+    width: 30px;
+    height: 30px;
+    background-color: #0f102c58;
+}
+.ChatScreenFooter > img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.chatScreenProfileImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+    background-color: #0f102c58;
+}
+.chatScreenRecieverInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+    font-family: "Inter";
+    color: #0f102c;
+}
+.chatScreenProfileImg > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: none;
+}
+
+.recieverProfileDiv{
+    width: 150px;
+    height: 100%;
+    background-color: purple;
+    z-index: 1;
+}

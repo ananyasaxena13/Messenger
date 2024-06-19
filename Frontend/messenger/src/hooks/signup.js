@@ -28,5 +28,9 @@ function handleInputErrors(fullname,username,password,confirmPassword){
         toast.error("Passwords do not match");
         return false;
     }
+    if(password.length <= 6){
+        toast.error("Password Length Should be More than 6");
+        return false;
+    }
     return true;
 }
